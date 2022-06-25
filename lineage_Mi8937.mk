@@ -35,6 +35,28 @@ PRODUCT_MODEL := MSM8937
 PRODUCT_MANUFACTURER := Xiaomi
 TARGET_VENDOR := Xiaomi
 
+# Maintainer flag
+RICE_MAINTAINER := ꪖꪀ𝘴ꫝ|邪惡的
+
+# Device flag
+RICE_DEVICE := Mi8937
+
+# Gapps build flag, if not defined build type is vanilla
+# GAPPS package is similar to core gapps
+WITH_GAPPS := true
+
+# Disable/Enable blur support, default is false
+TARGET_ENABLE_BLUR := true
+
+# Quick tap feature
+TARGET_SUPPORTS_QUICK_TAP := true
+
+# Face Unlock
+TARGET_FACE_UNLOCK_SUPPORTED := true
+
+# Boot animation
+TARGET_BOOT_ANIMATION_RES := 720
+
 PRODUCT_GMS_CLIENTID_BASE := android-xiaomi
 
 PRODUCT_BUILD_PROP_OVERRIDES += \
