@@ -10,30 +10,28 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/product_launched_with_n_mr1.mk)
 
 # Inherit some common LineageOS stuff.
-$(call inherit-product, vendor/lineage/config/common_full_phone.mk)
+$(call inherit-product, vendor/bliss/config/common_full_phone.mk)
 
 # Inherit from Mi8937 device
 $(call inherit-product, device/xiaomi/Mi8937/device.mk)
 
-# Overlays
-DEVICE_PACKAGE_OVERLAYS += \
-    $(LOCAL_PATH)/overlay-lineage
-
-PRODUCT_PACKAGES += \
-    xiaomi_landtoni_overlay_lineage \
-    xiaomi_prada_overlay_lineage \
-    xiaomi_riva_overlay_lineage \
-    xiaomi_rolex_overlay_lineage \
-    xiaomi_ulysse_overlay_lineage
-
 # Device identifier. This must come after all inclusions
 PRODUCT_DEVICE := Mi8937
-PRODUCT_NAME := lineage_Mi8937
+PRODUCT_NAME := bliss_Mi8937
 BOARD_VENDOR := Xiaomi
 PRODUCT_BRAND := Xiaomi
 PRODUCT_MODEL := MSM8937
 PRODUCT_MANUFACTURER := Xiaomi
 TARGET_VENDOR := Xiaomi
+
+# QUICK_TAP
+TARGET_SUPPORTS_QUICK_TAP := true
+
+# Boot animation
+TARGET_BOOT_ANIMATION_RES := 720 
+
+# Face Unlock
+TARGET_FACE_UNLOCK_SUPPORTED := true
 
 PRODUCT_GMS_CLIENTID_BASE := android-xiaomi
 

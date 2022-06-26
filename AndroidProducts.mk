@@ -5,9 +5,9 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/lineage_Mi8937.mk
+    $(LOCAL_DIR)/bliss_Mi8937.mk
 
 COMMON_LUNCH_CHOICES := \
-    lineage_Mi8937-user \
-    lineage_Mi8937-userdebug \
-    lineage_Mi8937-eng
+    bliss_Mi8937-user \
+    bliss_Mi8937-userdebug \
+    bliss_Mi8937-eng
