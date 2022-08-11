@@ -43,7 +43,7 @@ RICE_DEVICE := Mi8937
 
 # Gapps build flag, if not defined build type is vanilla
 # GAPPS package is similar to core gapps
-WITH_GAPPS := true
+WITH_GAPPS := false
 
 # Disable/Enable blur support, default is false
 TARGET_ENABLE_BLUR := true
@@ -55,7 +55,7 @@ TARGET_SUPPORTS_QUICK_TAP := true
 TARGET_FACE_UNLOCK_SUPPORTED := true
 
 # Boot animation
-TARGET_BOOT_ANIMATION_RES := 720
+SUSHI_BOOTANIMATION := 720
 
 PRODUCT_GMS_CLIENTID_BASE := android-xiaomi
 
